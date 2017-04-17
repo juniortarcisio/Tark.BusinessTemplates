@@ -8,5 +8,6 @@ namespace TemplatesForBusiness.Infra.RepositoryTark
 {
     public class Class1
     {
+
     }
 }
