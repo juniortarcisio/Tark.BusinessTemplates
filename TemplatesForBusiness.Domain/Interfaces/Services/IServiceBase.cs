@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TemplatesForBusiness.Infra.RepositoryTark
+namespace TemplatesForBusiness.Domain.Interfaces.Services
 {
-    public class Class1
+    public interface IServiceBase<TEntity> where TEntity : class
     {
 
     }
