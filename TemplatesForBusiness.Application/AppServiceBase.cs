@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TemplatesForBusiness.Domain.Interfaces.Services
+namespace TemplatesForBusiness.Application
 {
-    public interface IServiceBase<TEntity> where TEntity : IEntity
+    public class AppServiceBase
     {
-
     }
 }

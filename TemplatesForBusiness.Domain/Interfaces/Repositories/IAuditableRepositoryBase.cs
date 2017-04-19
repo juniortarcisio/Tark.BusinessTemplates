@@ -11,7 +11,7 @@ namespace TemplatesForBusiness.Domain.Interfaces.Repositories
     /// registers are never deleted, only virtualy.
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
-    public interface IAuditableRepositoryBase<TEntity> where TEntity : class
+    public interface IAuditableRepositoryBase<TEntity> where TEntity : IEntity
     {
         void GetAll();
 

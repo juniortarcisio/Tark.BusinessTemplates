@@ -12,7 +12,7 @@ namespace TemplatesForBusiness.Domain.Interfaces.Repositories
     /// which could contains composite PKs or not integer type fields
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
-    public interface IRepositoryBase<TEntity> where TEntity : class
+    public interface IRepositoryBase<TEntity> where TEntity : IEntity
     {
         void GetAll();
 

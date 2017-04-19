@@ -11,7 +11,7 @@ namespace TemplatesForBusiness.Domain.Interfaces.Repositories
     /// the kind of table that will be feeded only at the development of the Software
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
-    public interface IReadOnlyRepositoryBase<TEntity> where TEntity : class
+    public interface IReadOnlyRepositoryBase<TEntity> where TEntity : IEntity
     {
         void GetAll();
 

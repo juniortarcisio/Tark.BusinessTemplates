@@ -10,7 +10,7 @@ namespace TemplatesForBusiness.Domain.Interfaces.Repositories
     /// This repository pattern is intended to be used with bulky tables doesn't allow the method GetAll 
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
-    public interface IBulkyRepositoryBase<TEntity> where TEntity : class
+    public interface IBulkyRepositoryBase<TEntity> where TEntity : IEntity
     {
         void GetById(params object[] keys);
 

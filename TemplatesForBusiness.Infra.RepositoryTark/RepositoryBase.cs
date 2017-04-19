@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TemplatesForBusiness.Domain.Interfaces;
 using TemplatesForBusiness.Domain.Interfaces.Repositories;
 
 namespace TemplatesForBusiness.Infra.RepositoryTark
 {
-    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
+    public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : IEntity
     {
         public void Add(TEntity item)
         {

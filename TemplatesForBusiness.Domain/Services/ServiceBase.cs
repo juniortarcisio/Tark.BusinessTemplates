@@ -7,8 +7,8 @@ using TemplatesForBusiness.Domain.Interfaces.Services;
 
 namespace TemplatesForBusiness.Domain.Services
 {
-    public class ServiceBase<TEntity> : IServiceBase<TEntity> where TEntity : class
+    public abstract class ServiceBase<TEntity> : IServiceBase<TEntity> where TEntity : IEntity
     {
-
+        
     }
 }
