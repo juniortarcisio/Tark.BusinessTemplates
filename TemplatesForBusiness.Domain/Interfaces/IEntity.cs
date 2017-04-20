@@ -1,4 +1,5 @@
-﻿using TemplatesForBusiness.Domain.Validations;
+﻿using TemplatesForBusiness.Domain.Interfaces.Validations;
+using TemplatesForBusiness.Domain.Validations;
 
 namespace TemplatesForBusiness.Domain.Interfaces
 {
