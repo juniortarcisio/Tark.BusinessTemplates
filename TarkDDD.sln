@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarkDDD.ConsoleClient", "Ta
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infraestructure", "4. Infraestructure", "{367C9F9C-165E-4084-A852-1C588BE9352D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Server Presentation", "1. Server Presentation", "{0A2D6185-64F0-40E6-8230-541C8F9BAC00}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{0A2D6185-64F0-40E6-8230-541C8F9BAC00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarkDDD.Infra.Data", "TarkDDD.Infra.RepositoryTark\TarkDDD.Infra.Data.csproj", "{7CC3088C-0772-4A7C-9DB4-A5DF4166415B}"
 EndProject
