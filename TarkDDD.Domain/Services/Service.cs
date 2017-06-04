@@ -8,7 +8,8 @@ using TarkDDD.Domain.Validations;
 
 namespace TarkDDD.Domain.Services
 {
-    public abstract class Service<TEntity> : IService<TEntity> where TEntity : IEntity
+    public abstract class Service<TEntity> : IDisposable, IService<TEntity> 
+        where TEntity : IEntity
     {
         private readonly IRepository<TEntity> _repository;
 
@@ -82,6 +83,11 @@ namespace TarkDDD.Domain.Services
         public void RemoveById(params object[] keys)
         {
             _repository.RemoveById(keys);
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }
