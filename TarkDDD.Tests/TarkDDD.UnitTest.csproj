@@ -107,7 +107,7 @@
       <Project>{4403874f-145c-48c4-97e2-1d2609fa3d8d}</Project>
       <Name>TarkDDD.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TarkDDD.Infra.RepositoryTark\TarkDDD.Infra.Data.csproj">
+    <ProjectReference Include="..\TarkDDD.Infra.Data\TarkDDD.Infra.Data.csproj">
       <Project>{7cc3088c-0772-4a7c-9db4-a5df4166415b}</Project>
       <Name>TarkDDD.Infra.Data</Name>
     </ProjectReference>
