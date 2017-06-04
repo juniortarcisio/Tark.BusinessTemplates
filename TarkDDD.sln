@@ -32,9 +32,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarkDDD.Application", "TarkDDD.Application\TarkDDD.Application.csproj", "{B37A7E01-3AD3-4672-9A55-08081407EAB2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Documentation", "0. Documentation", "{D3E55E3C-890E-4082-9934-22DB418122EE}"
-	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. DataBase", "6. DataBase", "{E89D6448-D226-496A-A3EF-E9BCDFC50A08}"
 EndProject
