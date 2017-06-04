@@ -43,20 +43,24 @@
   <ItemGroup>
     <Compile Include="Entities\Country.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\ISelfValidation.cs" />
     <Compile Include="Interfaces\Repositories\IBulkyRepositoryBase.cs" />
-    <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Repositories\ICountryRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepository.cs" />
     <Compile Include="Interfaces\Repositories\IAuditableRepositoryBase.cs" />
     <Compile Include="Interfaces\Repositories\IReadOnlyRepositoryBase.cs" />
-    <Compile Include="Interfaces\Services\IServiceBase.cs" />
-    <Compile Include="Interfaces\Validations\IValidationError.cs" />
-    <Compile Include="Interfaces\Validations\IValidationResult.cs" />
+    <Compile Include="Interfaces\Services\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\CountryService.cs" />
+    <Compile Include="Services\Service.cs" />
     <Compile Include="Validations\ValidationError.cs" />
     <Compile Include="Validations\ValidationResult.cs" />
     <Compile Include="Validations\Validator.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Enumerators\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

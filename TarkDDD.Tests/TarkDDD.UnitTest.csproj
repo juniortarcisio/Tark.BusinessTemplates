@@ -82,10 +82,14 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="TarkOrm, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TarkOrm.NET\TarkOrm\bin\Release\TarkOrm.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\CountryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Validations\ValidationResultTest.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -95,9 +99,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TarkDDD.Application\TarkDDD.Application.csproj">
+      <Project>{b37a7e01-3ad3-4672-9a55-08081407eab2}</Project>
+      <Name>TarkDDD.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TarkDDD.Domain\TarkDDD.Domain.csproj">
       <Project>{4403874f-145c-48c4-97e2-1d2609fa3d8d}</Project>
       <Name>TarkDDD.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TarkDDD.Infra.RepositoryTark\TarkDDD.Infra.Data.csproj">
+      <Project>{7cc3088c-0772-4a7c-9db4-a5df4166415b}</Project>
+      <Name>TarkDDD.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TarkDDD.Domain.Interfaces.Validations
+namespace TarkDDD.Domain.Interfaces
 {
-    public interface IValidationError
+    public interface ISelfValidation
     {
-
+        Validations.ValidationResult Validate();        
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TarkDDD.Domain.Interfaces.Services
+namespace TarkDDD.Infra.RepositoryTark.Mapping
 {
-    public interface IServiceBase<TEntity> where TEntity : IEntity
+    public interface IEntityMapping
     {
-
+        void Map();
     }
 }

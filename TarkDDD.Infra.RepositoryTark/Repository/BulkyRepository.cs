@@ -2,7 +2,7 @@
 using TarkDDD.Domain.Interfaces;
 using TarkDDD.Domain.Interfaces.Repositories;
 
-namespace TarkDDD.Infra.RepositoryTark
+namespace TarkDDD.Infra.Data.Repository
 {
     public abstract class BulkyRepository<TEntity> : IBulkyRepositoryBase<TEntity> where TEntity : IEntity
     {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,11 +13,17 @@ namespace TarkDDD.Domain.Interfaces.Repositories
     /// which could contains composite PKs or not integer type fields
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
-    public interface IRepositoryBase<TEntity> where TEntity : IEntity
+    public interface IRepository<TEntity> where TEntity : IEntity
     {
-        void GetAll();
+        TEntity GetById(params object[] keys);
 
-        void GetById(params object[] keys);
+        IEnumerable<TEntity> GetAll();
+
+        IEnumerable<TEntity> GetWhere<TProperty>(Expression<Func<TEntity, TProperty>> lambda, object value);
+
+        bool ExistsById(params object[] keys);
+
+        bool ExistsWhere<TProperty>(Expression<Func<TEntity, TProperty>> lambda, object value);
 
         void Add(TEntity item);
 
@@ -24,6 +31,6 @@ namespace TarkDDD.Domain.Interfaces.Repositories
 
         void Remove(TEntity item);
 
-        void Remove(params object[] keys);
+        void RemoveById(params object[] keys);
     }
 }

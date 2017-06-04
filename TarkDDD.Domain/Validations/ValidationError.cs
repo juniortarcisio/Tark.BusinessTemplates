@@ -1,9 +1,6 @@
-﻿using System;
-using TarkDDD.Domain.Interfaces.Validations;
-
-namespace TarkDDD.Domain.Validations
+﻿namespace TarkDDD.Domain.Validations
 {
-    public class ValidationError : IValidationError
+    public class ValidationError 
     {
         public int StatusCode { get; set; }
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DataAnnotations = System.ComponentModel.DataAnnotations;
 
 namespace TarkDDD.Domain.Validations
@@ -12,7 +8,6 @@ namespace TarkDDD.Domain.Validations
         public static ValidationResult Validate(object instance)
         {
             var valContext = new DataAnnotations.ValidationContext(instance);
-            //DataAnnotations.Validator.ValidateObject(instance, valContext);
 
             List<DataAnnotations.ValidationResult> valResults = new List<DataAnnotations.ValidationResult>();
             DataAnnotations.Validator.TryValidateObject(instance, valContext, valResults, true);

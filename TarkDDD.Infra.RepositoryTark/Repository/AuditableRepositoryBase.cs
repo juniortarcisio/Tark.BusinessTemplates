@@ -2,11 +2,21 @@
 using TarkDDD.Domain.Interfaces;
 using TarkDDD.Domain.Interfaces.Repositories;
 
-namespace TarkDDD.Infra.RepositoryTark
+namespace TarkDDD.Infra.Data.Repository
 {
-    public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : IEntity
+    public abstract class AuditableRepositoryBase<TEntity> : IAuditableRepositoryBase<TEntity> where TEntity : IEntity
     {
         public void Add(TEntity item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Disable(params object[] keys)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Disable(TEntity item)
         {
             throw new NotImplementedException();
         }
@@ -17,16 +27,6 @@ namespace TarkDDD.Infra.RepositoryTark
         }
 
         public void GetById(params object[] keys)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(params object[] keys)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(TEntity item)
         {
             throw new NotImplementedException();
         }

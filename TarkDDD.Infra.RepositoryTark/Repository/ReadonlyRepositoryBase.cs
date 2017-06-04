@@ -2,7 +2,7 @@
 using TarkDDD.Domain.Interfaces;
 using TarkDDD.Domain.Interfaces.Repositories;
 
-namespace TarkDDD.Infra.RepositoryTark
+namespace TarkDDD.Infra.Data.Repository
 {
     public abstract class ReadonlyRepositoryBase<TEntity> : IReadOnlyRepositoryBase<TEntity> where TEntity : IEntity
     {

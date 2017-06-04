@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TarkDDD.Domain.Interfaces.Validations;
 
 namespace TarkDDD.Domain.Validations
 {
-    public class ValidationResult : IValidationResult
+    public class ValidationResult 
     {
-        public List<IValidationError> Errors { get; set; }
+        public List<ValidationError> Errors { get; private set; }
 
         public bool IsValid { get { return !Errors.Any(); } }
 
@@ -14,18 +13,24 @@ namespace TarkDDD.Domain.Validations
 
         public ValidationResult()
         {
-            Errors = new List<IValidationError>();
+            Errors = new List<ValidationError>();
         }
 
-        public IValidationResult Add(string errorMessage)
+        public ValidationResult Add(string errorMessage)
         {
             Errors.Add(new ValidationError(errorMessage));
             return this;
         }
 
-        public IValidationResult Add(IValidationError error)
+        public ValidationResult Add(ValidationError error)
         {
             Errors.Add(error);
+            return this;
+        }
+
+        public ValidationResult Add(ValidationResult validationResult)
+        {
+            Errors.AddRange(validationResult.Errors);
             return this;
         }
     }
